@@ -61,4 +61,4 @@ Link for INSTALLATION of PySWIP steps: https://github.com/yuce/pyswip/blob/maste
 
 GitHub repository link for PySWIP package: https://github.com/yuce/pyswip This link provides more example python codes and .pl files
 
-# More explanation will be added about transfer methodology
+More explanation will be added about transfer methodology
