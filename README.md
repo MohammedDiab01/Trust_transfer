@@ -1,5 +1,5 @@
 # TrustOntology
-Copyright © 2021 by Imperial College London (ICL), Personal Robotics Lab (PRL). The ontology model represents ontological knowledge for Trust in order to provide better assessment/evaluation for domains that include humans and robots interacting with each other.
+Copyright © 2023 by Imperial College London (ICL), Personal Robotics Lab (PRL). The ontology model represents ontological knowledge for Trust in order to provide better assessment/evaluation for domains that include humans and robots interacting with each other.
 
 # Ontology description
 The knowledge structure contains 3-level ontologies: 
@@ -61,3 +61,4 @@ Link for INSTALLATION of PySWIP steps: https://github.com/yuce/pyswip/blob/maste
 
 GitHub repository link for PySWIP package: https://github.com/yuce/pyswip This link provides more example python codes and .pl files
 
+# More explanation will be added about transfer methodology
