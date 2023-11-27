@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ease-crc.org/ont/organizing_table.owl#"
+     xml:base="http://www.ease-crc.org/ont/organizing_table.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:organizing_table="http://www.ease-crc.org/ont/organizing_table.owl#"
+     xmlns:trust_architecture="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#">
+    <owl:Ontology rdf:about="http://www.ease-crc.org/ont/organizing_table.owl">
+        <owl:imports rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl"/>
+        <rdfs:comment>Copyright © 2021 by Imperial College London (ICL), Personal Robotics Lab (PRL).
+The ontology model represents ontological knowledge for Trust in order to provide better assessment/evaluation for domains that include humans and robots interacting with each other.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasBelief -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasBelief">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasCapability">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:label>has capability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasConGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasConGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#hasGoal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasGoal">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:label>has goal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasIntention -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasIntention">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <owl:inverseOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#isIntentionOf"/>
+        <rdfs:label>has intention</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasLabel -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:label>has label</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasNoCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasNoCapability">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#hasCapability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:label>has plan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasSubTask -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasSubTask">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hasVulnerability -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hasVulnerability">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:label>has vulnerability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#isHarmful -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#isHarmful">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#isIntentionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#isIntentionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:comment>is intention of</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#isSlightlyHarmful -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#isSlightlyHarmful">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+        <rdfs:label>is slightly harmful</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#prevents -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#prevents">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#suggests -->
+
+    <owl:ObjectProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#suggests">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#belief -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#belief">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+        <rdfs:domain rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Belief"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#capability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#capability">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#event -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#event">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#goal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#goal">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#red -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#red">
+        <rdfs:subPropertyOf rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#colour"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#threat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#threat">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#transferInCluttered -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#transferInCluttered">
+        <rdfs:subPropertyOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#belief"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#vulnerability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#vulnerability">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#Explainability -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#Explainability">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description"/>
+        <rdfs:comment>is the description of what an agent does or thinks to do.​</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#ExplainableSituation -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#ExplainableSituation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#follows"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#Explainability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isExpressedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#ExplanabilityMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>is a critical situation, with high probabilities to cause risk, that requires to be explained by a system to pay the attention of the participants in order to prevent any type of harm to them.​
+
+Ex: a robot needs to explain a situation that creates risk to its participant.</rdfs:comment>
+        <rdfs:label>Explainable situation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#ExplanabilityMethod -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#ExplanabilityMethod">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Method"/>
+        <rdfs:label>Explainability method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#Gesture -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#Gesture">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#ExplanabilityMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#Institutional-basedTrust -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#Institutional-basedTrust">
+        <rdfs:subClassOf rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Trust"/>
+        <rdfs:label>Institutional-based trust</rdfs:label>
+        <rdfs:label>communication-based trust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#Reliability -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#Reliability">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Capability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#dependsOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>is a quality of the agents or systems to be capable to perform actions/tasks in a certain situation.​
+
+    Ex: although the robot has a navigation capability, it cannot move freely in a very narrow space.​</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#Speech -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#Speech">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#ExplanabilityMethod"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#Wineglass -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#Wineglass">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalArtifact"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#facial -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#facial">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#Gesture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#hand -->
+
+    <owl:Class rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#hand">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#Gesture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal -->
+
+    <rdf:Description rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isParticipantIn"/>
+                <owl:someValuesFrom rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#SubTask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Capability -->
+
+    <rdf:Description rdf:about="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Capability">
+        <rdfs:comment>is an individual quality of an agent or system by which the agent can participate in an event within other objects to achieve its goal.​
+
+    Ex: the robot has a capability to navigate from location X to Y​</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Recommendation -->
+
+    <rdf:Description rdf:about="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Recommendation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#isAffectedBy"/>
+                <owl:someValuesFrom rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#RiskySituation -->
+
+    <rdf:Description rdf:about="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#RiskySituation">
+        <rdfs:comment>is a stituation that can potentially lead to loss, damage and harm as a result of Threat event exploiting Vulnerability.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#ThreatEvent -->
+
+    <rdf:Description rdf:about="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#ThreatEvent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#suggests"/>
+                <owl:someValuesFrom rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#Explainability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#MayLeadTo"/>
+                <owl:someValuesFrom rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>is an event that contains objects that may cause damage or danger, such as a robot picking up a dangerous object (Sharp-edged object like scissors). Moreover, it may lead to the agent&apos;s vulnerability.​
+
+    Ex: a robot work in cluttered environment​</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#Mohammed -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#Mohammed">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Human"/>
+        <hasBelief rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#belief"/>
+        <hasSubTask rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#handOver_wineGlass"/>
+        <transferInCluttered rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Can manipulate objects in cluutered world&quot;</transferInCluttered>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#belief -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#belief">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Belief"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#capability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#capability">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Capability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#clutteredEnvironment -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#clutteredEnvironment"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#colour -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#colour">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Colour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#glass -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#glass">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Material"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#goal01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#goal01">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#handOverWineglassToHuman -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#handOverWineglassToHuman">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#handOver_wineGlass -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#handOver_wineGlass">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <hasPlan rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#transit-pickUp-move-release"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#human-asks-robot-to-bring-wineglass -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#human-asks-robot-to-bring-wineglass">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Intention"/>
+        <hasBelief rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#belief"/>
+        <hasConGoal rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#handOverWineglassToHuman"/>
+        <isIntentionOf rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Mohammed"/>
+        <goal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Can manipulate objects in cluutered world&quot;</goal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#low-risk-situation -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#low-risk-situation">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#RiskySituation"/>
+        <hasVulnerability rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#vulnerability"/>
+        <isSlightlyHarmful rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#low-risk-situation"/>
+        <prevents rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#sideGrasp"/>
+        <DUL:hasConstituent rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#handOver_wineGlass"/>
+        <DUL:hasConstituent rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#threatEvent"/>
+        <DUL:hasConstituent rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#wineGlass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#manipulationInCluttered -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#manipulationInCluttered">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Capability"/>
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#vulnerabilityBelief"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#material -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#material">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Material"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#observingMyBehaviour -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#observingMyBehaviour">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Recommendation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#risky-situation -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#risky-situation">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#RiskySituation"/>
+        <hasVulnerability rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#vulnerability"/>
+        <isHarmful rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#risky-situation"/>
+        <prevents rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#topGrasp"/>
+        <DUL:hasConstituent rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#handOver_wineGlass"/>
+        <DUL:hasConstituent rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#threatEvent"/>
+        <DUL:hasConstituent rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#wineGlass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#sideGrasp -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#sideGrasp"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#threatEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#threatEvent">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#ThreatEvent"/>
+        <threat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;The environment is cluttered&quot;</threat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#topGrasp -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#topGrasp"/>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#transit-pickUp-move-release -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#transit-pickUp-move-release">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#vulnerability -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#vulnerability">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Vulnerability"/>
+        <DUL:isIntroducedBy rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#threatEvent"/>
+        <vulnerability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;the robot can drop the liquid inside the cup when it grasps the cup from its handle&quot;</vulnerability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ease-crc.org/ont/organizing_table.owl#wineGlass -->
+
+    <owl:NamedIndividual rdf:about="http://www.ease-crc.org/ont/organizing_table.owl#wineGlass">
+        <rdf:type rdf:resource="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Cup"/>
+        <trust_architecture:hasMaterial rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Kinova -->
+
+    <rdf:Description rdf:about="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Kinova">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+        <hasGoal rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#goal01"/>
+        <hasNoCapability rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#manipulationInCluttered"/>
+        <hasVulnerability rdf:resource="http://www.ease-crc.org/ont/organizing_table.owl#vulnerability"/>
+        <capability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Assist human by executing such handover task&quot;</capability>
+        <capability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;NAVIGATION capability&quot;</capability>
+        <goal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;transfer the wineglass to Mohammed&quot;</goal>
+        <vulnerability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;the robot can drop the liquid inside the cup when it grasps the cup from its handle&quot;</vulnerability>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://juicer.ee.imperial.ac.uk:8443/ont/trust_architecture.owl#Risk">
+        <rdfs:comment>is a probabilistic value that can potentially lead to loss or harm as a result of a Threat event exploiting Vulnerability. The risk can be assessed based on the threat event and vulnerability of an agent.​
+
+    Ex: a robot can be harmful if its speed is very high while sharing a task with a human in a small region​</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
